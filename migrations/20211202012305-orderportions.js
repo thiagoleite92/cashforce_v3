@@ -17,16 +17,20 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      available: {
-        type: Sequelize.INTEGER,
+      vDup: {
+        type: Sequelize.STRING,
         allowNull: false,
+      },
+      availableToMarket: {
+        type: Sequelize.INTEGER,
+        defaultValue: null,
       },
       createdAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),
         allowNull: false,
       },
-      updateAt: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false,
       },
@@ -45,11 +49,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    /**
-     * Add reverting commands here.
-     *
-     * Example:
-     * await queryInterface.dropTable('users');
-     */
+    await queryInterface.dropTable('orderportions')
   }
 };

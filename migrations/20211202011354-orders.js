@@ -9,7 +9,7 @@ module.exports = {
         autoIncrement: true,
         type: Sequelize.INTEGER,
       },
-      orderNfld: {
+      orderNfId: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -19,23 +19,23 @@ module.exports = {
       },
       orderPath: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       orderFileName: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       orderOriginalName: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       emissionDate: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       pdfFile: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       emitedTo: {
         type: Sequelize.STRING,
@@ -43,22 +43,22 @@ module.exports = {
       },
       nNf: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       CTE: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       value: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       createdAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),
         allowNull: false,
       },
-      updateAt: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false,
       },
@@ -108,23 +108,23 @@ module.exports = {
       },
       orderStatusBuyer: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       orderStatusProvider: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       deliveryReceipt: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       cargoPackingList: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
       deliveryCtrc: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       },
     })
   },

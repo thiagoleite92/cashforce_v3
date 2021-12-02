@@ -35,18 +35,18 @@ module.exports = {
       },
       paymentStatusSponsor: {
         type: Sequelize.INTEGER,
-        allowNull: true,
+        defaultValue: null,
       },
       paymentStatusProvider: {
         type: Sequelize.INTEGER,
-        allowNull: true,
+        defaultValue: null,
       },
       createdAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),
         allowNull: false,
       },
-      updateAt: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false,
       },

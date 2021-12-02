@@ -19,36 +19,36 @@ module.exports = {
       },
       phoneNumber: {
         type: Sequelize.STRING,
-        allowNull: true,
+       defaultValue: null,
       },
       mobile: {
         type: Sequelize.STRING,
-        allowNull: true,
+       defaultValue: null,
       },
       departament: {
         type: Sequelize.STRING,
-        allowNull: true,
+       defaultValue: null,
       },
       verificationCode: {
         type: Sequelize.STRING,
-        allowNull: true,
+       defaultValue: null,
       },
       emailChecked: {
         type: Sequelize.INTEGER,
-        allowNull: true,
+       defaultValue: null,
       },
       createdAt: {
         type: Sequelize.DATE,
         defaultValue: new Date(),
         allowNull: false,
       },
-      updateAt: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false,
       },
       cashforceAdm: {
         type: Sequelize.INTEGER,
-        allowNull: true,
+        defaultValue: null,
       }
     })
   },

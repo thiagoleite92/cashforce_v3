@@ -73,6 +73,10 @@ module.exports = {
         type: Sequelize.STRING,
         defaultValue: null,
       },
+      phoneNumber: {
+        type: Sequelize.STRING,
+        defaultValue: null,
+      },
       situation: {
         type: Sequelize.STRING,
         defaultValue: null,
@@ -80,6 +84,15 @@ module.exports = {
       situationDate: {
         type: Sequelize.STRING,
         defaultValue: null,
+      },
+      createdAt: {
+        type: Sequelize.DATE,
+        defaultValue: new Date(),
+        allowNull: false,
+      },
+      updatedAt: {
+        type: Sequelize.DATE,
+        allowNull: false,
       },
       cnpjId: {
         type: Sequelize.INTEGER,
@@ -92,18 +105,13 @@ module.exports = {
         onDelete: 'CASCADE',
         allowNull: true,
       },
-      createdAt: {
-        type: Sequelize.DATE,
-        defaultValue: new Date(),
-        allowNull: false,
-      },
-      updateAt: {
-        type: Sequelize.DATE,
-        allowNull: false,
+      confirm: {
+        type: Sequelize.INTEGER,
+        defaultValue: null,
       },
       email: {
         type: Sequelize.STRING,
-        allowNull: true,
+        defaultValue: null,
       }
     })
   },

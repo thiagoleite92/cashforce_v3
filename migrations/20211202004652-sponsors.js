@@ -102,7 +102,7 @@ module.exports = {
         defaultValue: new Date(),
         allowNull: false,
       },
-      updateAt: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false,
       },
