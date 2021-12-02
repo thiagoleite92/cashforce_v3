@@ -1,5 +1,5 @@
 const express = require('express');
-const { cnpj } = require('./models/');
+const { cnpj, provider, sponsor } = require('./models/');
 
 const app = express();
 
@@ -13,6 +13,14 @@ app.get('/', async (req, res) => {
   const list = await cnpj.findAll();
 
   return res.status(200).json(list)
+})
+
+app.get('/prov', async (req, res) => {
+  console.log('prov');
+
+  const prov = await provider.findAll();
+
+  return res.status(200).json(prov)
 })
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

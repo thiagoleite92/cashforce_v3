@@ -7,5 +7,11 @@ module.exports = (sequelize, DataTypes) => {
   },
   )
 
+  cnpj.associate = (models) => {
+    cnpj.hasMany(models.provider, {
+      foreignKey: 'cnpjId', as: 'CNPJ'
+    })
+  }
+
   return cnpj;
 };
