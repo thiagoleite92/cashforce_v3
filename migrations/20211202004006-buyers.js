@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('providers', {
+    await queryInterface.createTable('buyers', {
       id: {
         primaryKey: true,
         allowNull: false,
@@ -73,40 +73,12 @@ module.exports = {
         type: Sequelize.STRING,
         defaultValue: null,
       },
-      bank: {
-        type: Sequelize.STRING,
-        defaultValue: null,
-      },
-      bankAgency: {
-        type: Sequelize.STRING,
-        defaultValue: null,
-      },
-      account: {
-        type: Sequelize.STRING,
-        defaultValue: null,
-      },
-      documents: {
-        type: Sequelize.STRING,
-        defaultValue: null,
-      },
-      phoneNumber: {
-        type: Sequelize.STRING,
-        defaultValue: null,
-      },
       situation: {
         type: Sequelize.STRING,
         defaultValue: null,
       },
       situationDate: {
         type: Sequelize.STRING,
-        defaultValue: null,
-      },
-      createdAt: {
-        type: Sequelize.DATE,
-        defaultValue: new Date(),
-      },
-      updateAt: {
-        type: Sequelize.DATE,
         defaultValue: null,
       },
       cnpjId: {
@@ -120,10 +92,23 @@ module.exports = {
         onDelete: 'CASCADE',
         allowNull: true,
       },
+      createdAt: {
+        type: Sequelize.DATE,
+        defaultValue: new Date(),
+        allowNull: false,
+      },
+      updateAt: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      email: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      }
     })
   },
 
-  down: async (queryInterface, _Sequelize) => {
-    await queryInterface.dropTable('providers')
+  down: async (queryInterface, Sequelize) => {
+    await queryInterface.dropTable('buyers')
   }
 };
