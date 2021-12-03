@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      tarif: {
+      tariff: {
         type: Sequelize.STRING,
         allowNull: false,
       },
