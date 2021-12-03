@@ -31,7 +31,13 @@ module.exports = (sequelize, DataTypes) => {
     order.belongsTo(models.user, {
       foreignKey: 'userId', as: 'user'
     })
-  }
+  };
+
+  order.associate = (models) => {
+    order.hasMany(models.orderportion, {
+      foreignKey: 'orderId', as: 'order'
+    });
+  };
 
   return order;
 }

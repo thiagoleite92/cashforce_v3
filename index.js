@@ -1,5 +1,5 @@
 const express = require('express');
-const { cnpj, provider, offer } = require('./models/');
+const { cnpj, provider, orderportion } = require('./models/');
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.get('/', async (req, res) => {
 app.get('/prov', async (req, res) => {
   console.log('prov');
 
-  const prov = await offer.findAll();
+  const prov = await orderportion.findAll();
 
   return res.status(200).json(prov)
 })
