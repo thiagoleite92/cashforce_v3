@@ -15,19 +15,5 @@ app.get('/', async (req, res) => {
   return res.status(200).json(list)
 })
 
-app.get('/prov', async (req, res) => {
-  console.log('prov');
-
-  const prov = await provider.findAll();
-  const orderP =  await orderportion.findAll();
-  const or =  await order.findAll();
-  const b =  await buyer.findAll();
-  const s =  await sponsor.findAll();
-  const o =  await offer.findAll();
-  const u =  await user.findAll();
-
-  return res.status(200).json({prov, orderP, or, b, s, u})
-})
-
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
 
