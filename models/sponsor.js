@@ -31,5 +31,11 @@ module.exports = (sequelize, DataTypes) => {
     });
   };
 
+  sponsor.associate = (models) => {
+    sponsor.hasMany(models.offer, {
+      foreignKey: 'sponsorId', as: 'sponsor'
+    });
+  };
+
   return sponsor;
 }
