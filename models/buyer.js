@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const provider = sequelize.define('provider', {
+  const buyer = sequelize.define('buyer', {
     name: DataTypes.STRING,
     tradingName: DataTypes.STRING,
     cashforceTax: DataTypes.STRING,
@@ -16,28 +16,25 @@ module.exports = (sequelize, DataTypes) => {
     neighborhood: DataTypes.STRING,
     city: DataTypes.STRING,
     state: DataTypes.STRING,
-    bank: DataTypes.STRING,
-    bankAgency: DataTypes.STRING,
-    account: DataTypes.STRING,
-    documents: DataTypes.STRING,
     phoneNumber: DataTypes.STRING,
     situation: DataTypes.STRING,
     situationDate: DataTypes.STRING,
     cnpjId: DataTypes.INTEGER,
+    confirm: DataTypes.INTEGER,
     email: DataTypes.STRING,
   })
 
-  provider.associate = (models) => {
-    provider.belongsTo(models.cnpj, {
-      foreignKey: 'cnpjId', as: 'cnpj'
+  buyer.associate = (models) => {
+    buyer.belongsTo(models.cnpj, {
+      foreignKey: 'cnpjId', as: 'cnpj',
     });
   };
 
-  provider.associate = (models) => {
-    provider.hasMany(models.order, {
-      foreignKey: 'providerId', as: 'provider'
-    });
-  }
+  buyer.associate = (models) => {
+    buyer.hasMany(models.order, {
+      foreignKey: 'buyerId', as: 'buyer',
+    })
+  };
 
-  return provider;
-};
+  return buyer
+}
