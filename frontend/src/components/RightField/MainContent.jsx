@@ -5,9 +5,9 @@ import '../styles/MainContent.css'
 
 function MainContent() {
   return (
-    <div>
+    <div id="main-content">
       <Header />
-      <hr />
+      <hr style={{ backgroundColor: '#DFE2EB' }} />
       <PageHeader />
       <span className='span-notas-fiscais'>Visualize as notas fiscais que você tem</span>
     </div>

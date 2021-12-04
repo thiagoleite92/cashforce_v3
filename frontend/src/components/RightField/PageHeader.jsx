@@ -4,7 +4,7 @@ import ShakerHands from '../ShakerHands';
 function PageHeader() {
   return (
     <div id="page-header">
-      <ShakerHands input="right-side" />
+      <ShakerHands side="right-side" />
       <h1 class="notas-right-side">Notas fiscais</h1>
     </div>
   )

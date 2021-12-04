@@ -10,7 +10,7 @@ function CashForceLogo() {
         <svg width="4" height="64" viewBox="0 0 4 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="4" height="64" rx="2" fill="#00AD8C" />
         </svg>
-        <ShakerHands input='left-side' />
+        <ShakerHands side='left-side' />
         <span className="notas-left-side">Notas fiscais</span>
       </aside>
     </>
