@@ -1,5 +1,4 @@
 #left-bar {
-  height: 900px;
   width: 288px;
   background: #FFFFFF;
   box-shadow: 0px 10px 30px rgba(225, 229, 236, 0.5);
@@ -11,11 +10,18 @@
   align-items: center;
 }
 
-.shake-hands {
+.shaker-hands-left-side {
   margin-left: 25px;
 }
 
-.notas {
-  margin: 15px 0 20px 15px;
+.notas-left-side {
+  margin: 22px 0 20px 15px;
   color: #00AD8C;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
 }

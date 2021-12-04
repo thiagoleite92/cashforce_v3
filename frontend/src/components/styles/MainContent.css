@@ -1,0 +1,44 @@
+#header {
+  background: #FFFFFF;
+  border-radius: 12px 0px 0px 0px;
+  width: 1272px;
+  height: 64px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 1px;
+}
+
+#page-header {
+  display: flex;
+  align-items: center;
+  width: 255px;
+  margin-top: 1px;
+}
+
+.shaker-hands-right-side {
+  margin-left: 48px;
+  color: 1px solid #021B51;
+}
+
+.notas-right-side {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 9px;
+  color: #021B51;
+}
+
+.span-notas-fiscais {
+  width: 255px;
+  height: 20px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #727D94;
+  margin-left: 48px;
+}
