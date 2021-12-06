@@ -88,4 +88,5 @@
 
 .container-bill-menu {
   display: flex;
+  justify-content: space-around;
 }

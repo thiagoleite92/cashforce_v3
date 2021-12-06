@@ -1,6 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import '../styles/MainContent.css'
+
+const formatDate = (emissionDate) => {
+  const regexPatter = /[0-9]{4}-[0-9]{2}-[0-9]{2}/gm
+  const date = emissionDate.match(regexPatter)[0].split('-').reverse().join('/');
+ 
+  return date;
+}
+
 
 function BillMenu({ billInfo }) {
 
@@ -17,7 +24,7 @@ function BillMenu({ billInfo }) {
               <div >{orderNumber}</div>
               <div >{billInfo.sacado[0].name}</div>
               <div>{billInfo.cedente[0].name}</div>
-              <div>{emissionDate}</div>
+              <div>{formatDate(emissionDate)}</div>
               <div>{value}</div>
               <div>{orderStatusBuyer}</div>
               <button>
