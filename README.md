@@ -3,7 +3,6 @@
 ## Utilizando a versão do node v14.17.5
 
 # PARA RODAR O PROJETO EM SUA MÁQUINA CLONE O REPOSITÓRIO E SIGA ESSE PASSO-A-PASSO
-Clone o projeto para sua máquina  
 
 # Backend - Vá para a pasta raiz do backend -> /cashforce/backend
   Faça a instalação dos pacotes utilizando o comando npm install ou npm i.  
