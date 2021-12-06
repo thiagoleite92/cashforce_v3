@@ -35,15 +35,11 @@ function DashBoard() {
         <div>VALOR</div>
         <div>STATUS</div>
       </div>
-      <div>
-        <div>
-          {
-            loadingInfo
-              ? <span>Carregando informação</span>
-              : <BillMenu billInfo={billInfo} />
-          }
-        </div>
-      </div>
+      {
+        loadingInfo
+          ? <span>Carregando informação</span>
+          : <BillMenu billInfo={billInfo} />
+      }
     </>
   );
 };

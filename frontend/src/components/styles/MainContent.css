@@ -65,15 +65,33 @@
   padding-bottom: 10px;
 }
 
-.main-conteiner button {
-  height: auto;
+.btn-cedente-info {
+  height: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #DFE2EB;
+  border-radius: 24px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(114, 125, 148, 1);
+  text-align: center;
+  width: 150px
 }
 
 .container-bill-header {
-  display: inline;
-  justify-content: space-around;
-  width: 1000px;
+  display: flex;
+  justify-content: space-between;
   margin-top: 22px;
+  border-radius: 4px;
+  margin-bottom: 19px;
+  width: 875px;
+  margin-left: 76px;
+  align-items: center;
+
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
@@ -83,10 +101,29 @@
   align-items: center;
   text-transform: uppercase;
   color: #A1A8B8;
-  border-radius: 4px;
 }
 
 .container-bill-menu {
   display: flex;
   justify-content: space-around;
+  border: 1px solid #DFE2EB;
+  margin-top: 16px;
+  width: 1177px;
+  height: 48px;
+  align-items: center;
+  margin-left: 30px;
+
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(77, 85, 102, 1);
 }
+
+.span-color{
+  color: rgba(0, 173, 140, 1);
+} 
+  

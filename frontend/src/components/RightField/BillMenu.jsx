@@ -2,11 +2,13 @@ import React from 'react'
 import '../styles/MainContent.css'
 
 const formatDate = (emissionDate) => {
-  const regexPatter = /[0-9]{4}-[0-9]{2}-[0-9]{2}/gm
-  const date = emissionDate.match(regexPatter)[0].split('-').reverse().join('/');
+  const regexPattern = /[0-9]{4}-[0-9]{2}-[0-9]{2}/gm
+  const date = emissionDate.match(regexPattern)[0].split('-').reverse().join('/');
  
   return date;
 }
+
+const formatCurrency = new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' })
 
 
 function BillMenu({ billInfo }) {
@@ -22,10 +24,10 @@ function BillMenu({ billInfo }) {
               <div >{billInfo.sacado[0].name}</div>
               <div>{billInfo.cedente[0].name}</div>
               <div>{formatDate(emissionDate)}</div>
-              <div>{new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(value)}</div>
-              <div>{orderStatusBuyer}</div>
-              <button>
-                Dados DO CEDENTE
+              <div className="span-color">{formatCurrency.format(value)}</div>
+              <div className="span-color">{orderStatusBuyer}</div>
+              <button className='btn-cedente-info'>
+                Dados do cedente
               </button>
             </div>
           )
