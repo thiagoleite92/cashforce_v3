@@ -12,9 +12,6 @@ const formatDate = (emissionDate) => {
 function BillMenu({ billInfo }) {
 
 
-  console.log(billInfo, 'tablebody')
-
-
   return (
     <div>
       {
@@ -25,7 +22,7 @@ function BillMenu({ billInfo }) {
               <div >{billInfo.sacado[0].name}</div>
               <div>{billInfo.cedente[0].name}</div>
               <div>{formatDate(emissionDate)}</div>
-              <div>{value}</div>
+              <div>{new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(value)}</div>
               <div>{orderStatusBuyer}</div>
               <button>
                 Dados DO CEDENTE
