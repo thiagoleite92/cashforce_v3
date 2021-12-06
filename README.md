@@ -4,7 +4,7 @@
 
 # PARA RODAR O PROJETO EM SUA MÁQUINA CLONE O REPOSITÓRIO E SIGA ESSE PASSO-A-PASSO
 
-# Backend - Vá para a pasta raiz do backend -> /cashforce/backend
+# Backend - Na pasta raiz do backend -> /cashforce_v3-main/backend
   Faça a instalação dos pacotes utilizando o comando npm install ou npm i.  
   Após isso configure o arquivo cashforce/backend/config/config.json com suas informações e o nome do banco de dados.  
   {
@@ -29,7 +29,7 @@
   
   Se tudo ocorreu como esperado, digite no terminal *npm run dev* para deixar o servidor online  
  
-# Frontend - Vá para a pasta raiz do frontend -> /cashforce/frontend
+# Frontend -Na pasta raiz do frontend -> /cashforce_v3-main/frontend
   Faça a instalação dos pacotes utilizando o comando npm install ou npm i.  
   
   Ainda no caminho cashforce/frontend, digite no seu terminal npm start.  
