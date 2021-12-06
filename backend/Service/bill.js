@@ -1,8 +1,8 @@
 const { cnpj, provider, buyer, order } = require('../models/');
 
 const serviceGetBillById = async (id) => {
-  console.log(id);
-  const billsList = await cnpj.findByPk(id,
+  const billsList = await cnpj.findByPk(
+    id,
     {
     attributes: ['cnpj', 'id'],
     include: [
@@ -29,7 +29,6 @@ const serviceGetBillById = async (id) => {
   }
 
   return billsList
-
 }
 
 module.exports = {
