@@ -6,8 +6,8 @@
 Clone o projeto para sua máquina: git clone git@github.com:thiagoleite92/cashforce_v3.git
 
 # Backend - Vá para a pasta raiz do backend -> /cashforce/backend
-  Faça a instalação dos pacotes utilizando o comando npm install ou npm i
-  Após isso configure o arquivo cashforce/backend/config/config.json com suas informações e o nome do banco de dados
+  Faça a instalação dos pacotes utilizando o comando npm install ou npm i.
+  Após isso configure o arquivo cashforce/backend/config/config.json com suas informações e o nome do banco de dados.
   {
   "development": {
     "username": "username_sql", < nome do seu usuário ou usuário root
@@ -19,13 +19,13 @@ Clone o projeto para sua máquina: git clone git@github.com:thiagoleite92/cashfo
       "timestamps": true
     }
   }
-  }
+  }.
   
-  ainda no caminho cashforce/backend, digite no terminal npm run dev para deixar o servidor online
+  ainda no caminho cashforce/backend, digite no terminal npm run dev para deixar o servidor online.
  
 # Frontend - Vá para a pasta raiz do frontend -> /cashforce/frontend
-  Faça a instalão dos pacotes utilizando o comando npm install ou npm i
+  Faça a instalão dos pacotes utilizando o comando npm install ou npm i.
   
-  ainda no caminho cashforce/frontend, digite no seu terminal npm start
+  ainda no caminho cashforce/frontend, digite no seu terminal npm start.
 
-### Tudo vai funcionar normal
+### Tudo vai funcionar normal.
