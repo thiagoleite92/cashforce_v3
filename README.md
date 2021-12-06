@@ -20,7 +20,14 @@
   }  
   }    
   
-  ainda no caminho cashforce/backend, digite no terminal npm run dev para deixar o servidor online.
+  Depois do arquivo config.json devidamente configurado, precisamos fazer a configuração do banco de dados proprimante dito.  
+  
+  ## Siga esses comandos para fazer a configuração do banco de dados utilzando o Sequelize  
+  npx sequelize db:create > criar o banco de dados propriamente dito  
+  npx sequelize db:migrate > criar as tabelas no banco de dados que acabamos de criar  
+  npx sequelize db:seed:all > inserção de dados fictícios nas tabelas  
+  
+  Se tudo ocorreu como esperado, digite no terminal *npm run dev* para deixar o servidor online  
  
 # Frontend - Vá para a pasta raiz do frontend -> /cashforce/frontend
   Faça a instalação dos pacotes utilizando o comando npm install ou npm i.  
