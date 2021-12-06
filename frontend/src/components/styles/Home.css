@@ -2,12 +2,16 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-color: #FBFDFE;
+}
+
+#root {
+  background: #FFFFFF;
 }
 
 #home {
   display: flex;
   width: 1272px;
   height: 900px;
-  margin-left: 100px
+  margin-left: 100px;
+  background-color: #FBFDFE;
 };

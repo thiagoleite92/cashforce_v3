@@ -5,7 +5,7 @@ function PageHeader() {
   return (
     <div id="page-header">
       <ShakerHands side="right-side" />
-      <h1 class="notas-right-side">Notas fiscais</h1>
+      <h1 className="notas-right-side">Notas fiscais</h1>
     </div>
   )
 }
