@@ -46,3 +46,46 @@
   color: #727D94;
   margin-left: 48px;
 }
+
+.main-conteiner {
+  border: 1px solid grey;
+  border-radius: 2px;
+  display: grid;
+  grid-template-areas: 'box1'
+    'box2'
+    'box3'
+    'box4';
+  margin: 20px;
+  padding: 5px;
+  width: 60%;
+}
+
+.main-conteiner span {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.main-conteiner button {
+  height: auto;
+}
+
+.container-bill-header {
+  display: inline;
+  justify-content: space-around;
+  width: 1000px;
+  margin-top: 22px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #A1A8B8;
+  border-radius: 4px;
+}
+
+.container-bill-menu {
+  display: flex;
+}
